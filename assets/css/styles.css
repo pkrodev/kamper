@@ -114,7 +114,16 @@ h1,h2,h3,.brand{font-family:'Poppins',sans-serif;line-height:1.15}
 
 /* ====== GALERIA ====== */
 .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.gallery-item{border-radius:12px;overflow:hidden;cursor:pointer;aspect-ratio:4/3;box-shadow:var(--shadow)}
+.gallery-item{position:relative;border-radius:12px;overflow:hidden;cursor:pointer;aspect-ratio:4/3;box-shadow:var(--shadow)}
+.gallery-item--hidden{display:none}
+.gallery-more{
+  position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:2px;background:rgba(224,228,222,.8);color:#2b3229;
+  font-family:'Poppins',sans-serif;font-weight:700;font-size:2rem;line-height:1;
+  transition:background .2s ease;
+}
+.gallery-more small{font-size:.78rem;font-weight:600;letter-spacing:.6px;text-transform:uppercase}
+.gallery-item--more:hover .gallery-more{background:rgba(224,228,222,.66)}
 .gallery-item--big{grid-column:1 / -1;aspect-ratio:16/9}
 .gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
 .gallery-item:hover img{transform:scale(1.06)}
@@ -185,6 +194,9 @@ h1,h2,h3,.brand{font-family:'Poppins',sans-serif;line-height:1.15}
 .footer-inner .brand-mark{color:#fff}
 .footer-motto{font-style:italic;color:#9fb0a1;font-size:.96rem}
 .footer-phone{font-weight:700;color:#fff}
+.contact-map{max-width:900px;margin:26px auto 0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);line-height:0}
+.contact-map iframe{width:100%;height:360px;border:0;display:block}
+
 .footer-legal{text-align:center;color:#9aa79b;font-size:.82rem;border-top:1px solid rgba(255,255,255,.08);padding-top:18px}
 .footer-copy{text-align:center;color:#7c8a7e;font-size:.85rem;padding-top:8px}
 
