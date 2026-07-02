@@ -134,7 +134,7 @@ h1,h2,h3,.brand{font-family:'Poppins',sans-serif;line-height:1.15}
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);
   padding:30px 26px;text-align:center;box-shadow:var(--shadow);
 }
-.equip-ico{font-size:2.6rem;margin-bottom:14px}
+.equip-photo{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;margin:-6px 0 18px}
 .equip-item h3{font-size:1.2rem;margin-bottom:10px}
 .equip-item p{color:var(--muted);font-size:.97rem}
 .equip-note{text-align:center;margin-top:30px;color:var(--muted)}
@@ -151,7 +151,7 @@ h1,h2,h3,.brand{font-family:'Poppins',sans-serif;line-height:1.15}
 .price-card .price{font-size:1.5rem;font-weight:700;color:var(--green);margin:12px 0}
 
 /* ====== INSPIRACJE ====== */
-.inspo{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.inspo{display:grid;grid-template-columns:repeat(2,1fr);gap:28px;max-width:920px;margin:0 auto}
 .inspo-item{
   background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
   box-shadow:var(--shadow);transition:transform .2s ease;
@@ -185,7 +185,8 @@ h1,h2,h3,.brand{font-family:'Poppins',sans-serif;line-height:1.15}
 .footer-inner .brand-mark{color:#fff}
 .footer-motto{font-style:italic;color:#9fb0a1;font-size:.96rem}
 .footer-phone{font-weight:700;color:#fff}
-.footer-copy{text-align:center;color:#7c8a7e;font-size:.85rem;border-top:1px solid rgba(255,255,255,.08);padding-top:18px}
+.footer-legal{text-align:center;color:#9aa79b;font-size:.82rem;border-top:1px solid rgba(255,255,255,.08);padding-top:18px}
+.footer-copy{text-align:center;color:#7c8a7e;font-size:.85rem;padding-top:8px}
 
 /* ====== LIGHTBOX ====== */
 .lightbox{
@@ -208,6 +209,7 @@ h1,h2,h3,.brand{font-family:'Poppins',sans-serif;line-height:1.15}
 @media(max-width:980px){
   .cards{grid-template-columns:repeat(2,1fr)}
   .equip{grid-template-columns:1fr}
+  .docs-grid{grid-template-columns:1fr}
   .inspo{grid-template-columns:repeat(2,1fr)}
   .feature{grid-template-columns:1fr;gap:30px}
   .feature--reverse .feature-text{order:0}
@@ -318,6 +320,28 @@ h1,h2,h3,.brand{font-family:'Poppins',sans-serif;line-height:1.15}
   max-width:760px;margin:22px auto 0;text-align:center;color:var(--muted);font-size:.95rem;
 }
 .price-note strong{color:var(--ink)}
+
+/* --- Cennik: dokumenty / umowy --- */
+.docs{max-width:940px;margin:46px auto 0;text-align:center}
+.docs-title{font-size:1.35rem;margin-bottom:8px}
+.docs-intro{color:var(--muted);font-size:.95rem;max-width:660px;margin:0 auto 26px}
+.docs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;text-align:left}
+.doc-card{
+  display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);
+  border-radius:var(--radius);padding:18px 20px;box-shadow:var(--shadow);
+  transition:transform .15s ease,box-shadow .15s ease,border-color .15s ease;
+}
+.doc-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:var(--green)}
+.doc-ico{width:38px;height:46px;flex:0 0 auto;fill:#c0392b}
+.doc-info{display:flex;flex-direction:column;min-width:0;flex:1}
+.doc-name{font-family:'Poppins',sans-serif;font-weight:600;font-size:.97rem;color:var(--ink);line-height:1.25}
+.doc-meta{color:var(--muted);font-size:.82rem;margin-top:3px}
+.doc-dl{
+  width:22px;height:22px;flex:0 0 auto;fill:none;stroke:var(--green);
+  stroke-width:2;stroke-linecap:round;stroke-linejoin:round;opacity:.65;
+  transition:opacity .15s ease,transform .15s ease;
+}
+.doc-card:hover .doc-dl{opacity:1;transform:translateY(2px)}
 
 /* --- Kontakt: dane + social --- */
 .contact-grid{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin:8px 0 26px}

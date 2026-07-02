@@ -1,5 +1,14 @@
+# ===== Materiały źródłowe od klienta — NIE publikujemy na stronie =====
 Folder kamper/
 Folder przyczepa/
 Folder wynajm/
+Bagaznik rowerowy/
+Box dachowy/
+Namiot 4 osobowy/
 *.docx
+
+# ===== PDF-y =====
+# Domyślnie nie wrzucamy PDF-ów źródłowych (np. Wynajem-komplet-ogloszen.pdf),
+# ale umowy linkowane na stronie MUSZĄ trafić na serwer:
 *.pdf
+!umowy/*.pdf

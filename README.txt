@@ -7,7 +7,27 @@ tego folderu na serwer/hosting. Plik startowy to index.html.
 UWAGA: foldery "Folder kamper", "Folder przyczepa", "Folder wynajm" oraz
 pliki WYNAJEM TURYSTYKA.docx i Wynajem-komplet-ogloszen.pdf to materiały
 źródłowe (zdjęcia i opisy od klienta) — NIE trzeba ich wgrywać na serwer.
-Na stronę idą tylko: index.html, README.txt i folder assets/.
+Na serwer wgrywamy: index.html, robots.txt, sitemap.xml, llms.txt,
+folder assets/ oraz folder umowy/ (PDF-y linkowane w sekcji "Cennik").
+README.txt jest tylko dla Ciebie – nie musi trafiać na serwer.
+
+SEO / WIDOCZNOŚĆ W GOOGLE I W AI
+-------------------------------
+- robots.txt   -> zezwala robotom (w tym AI: ChatGPT, Perplexity, Gemini,
+                  Claude) na indeksowanie i wskazuje sitemap.
+- sitemap.xml  -> mapa strony dla wyszukiwarek. Po zmianie treści warto
+                  zaktualizować datę <lastmod>. Zgłoś ją w Google Search Console.
+- llms.txt     -> zwięzłe streszczenie oferty dla wyszukiwarek AI.
+- W index.html w sekcji <head> są meta tagi (opis, Open Graph do podglądu
+  linków na FB/Messenger) oraz dane strukturalne JSON-LD (LocalBusiness +
+  produkty z cenami). Jeśli zmienisz ceny/adres/telefon, zaktualizuj też
+  te dane w JSON-LD.
+- Dane firmy (stopka + JSON-LD): Chołody Dariusz Chołody Auto Serwis,
+  ul. Stadionowa 7, 20-405 Lublin, NIP 7121016156, REGON 430554004.
+- Współrzędne geo (51.2216, 22.5451) są przybliżone dla ul. Stadionowej —
+  jeśli chcesz, mogę je doprecyzować pod dokładny punkt.
+- Zalecane: załóż wizytówkę Google (Profil Firmy) na ten sam adres i telefon
+  — to najmocniej podbija widoczność lokalną "wynajem kampera Lublin".
 
 STRUKTURA PLIKÓW
 ----------------

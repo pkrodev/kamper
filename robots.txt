@@ -1,0 +1,54 @@
+# robots.txt — kamperylublin.pl (Chołody Auto Serwis)
+# Cała strona jest publiczna i chcemy być widoczni w wyszukiwarkach oraz w AI.
+
+User-agent: *
+Allow: /
+
+# --- Materiały źródłowe / robocze: nie indeksować, jeśli trafią na serwer ---
+Disallow: /umowy/$
+
+# --- Wyszukiwarki AI / asystenci (świadomie zezwalamy na indeksowanie treści) ---
+# Dzięki temu firma może pojawiać się w odpowiedziach ChatGPT, Perplexity, Gemini, Claude itd.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://kamperylublin.pl/sitemap.xml
