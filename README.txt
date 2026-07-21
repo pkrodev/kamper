@@ -44,8 +44,10 @@ przyczepa-1..5.jpg      -> galeria przyczepy Bailey
 namiot-1..4.jpg         -> galeria namiotu dachowego (hard-top)
 inspo-1.jpg             -> zdjęcie w sekcji "Nasze inspiracje"
 
-Zdjęcia zostały już zmniejszone (do ok. 1680 px) i zoptymalizowane, żeby
-strona ładowała się szybko. Oryginały są w folderach źródłowych.
+Wszystkie zdjęcia na stronie są w formacie .jpg, zmniejszone do maks.
+1400 px (kafelki "wizualizacja" do 1000 px) i skompresowane — cały folder
+assets/img/ waży ok. 7 MB zamiast 56 MB, dzięki czemu strona ładuje się
+szybko także na telefonie. Oryginały są w folderach źródłowych.
 
 JAK PODMIENIĆ / DODAĆ ZDJĘCIE
 -----------------------------
