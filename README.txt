@@ -1,15 +1,32 @@
 STRONA: kamperylublin.pl  (Chołody Auto Serwis – Wynajem)
 =========================================================
 
-Strona jest statyczna (HTML + CSS + JS) — wystarczy wgrać całą zawartość
-tego folderu na serwer/hosting. Plik startowy to index.html.
+Strona jest statyczna (HTML + CSS + JS). Plik startowy to index.html.
+
+JAK PUBLIKUJEMY ZMIANY
+----------------------
+Strona stoi na Vercelu i jest połączona z repozytorium GitHub
+(github.com/pkrodev/kamper). Wystarczy wysłać zmiany na gałąź "main":
+
+    git add -A
+    git commit -m "opis zmiany"
+    git push
+
+Vercel sam zbuduje i opublikuje nową wersję (zwykle w kilkanaście sekund).
+Nie ma potrzeby wgrywania niczego przez FTP.
 
 UWAGA: foldery "Folder kamper", "Folder przyczepa", "Folder wynajm" oraz
 pliki WYNAJEM TURYSTYKA.docx i Wynajem-komplet-ogloszen.pdf to materiały
-źródłowe (zdjęcia i opisy od klienta) — NIE trzeba ich wgrywać na serwer.
-Na serwer wgrywamy: index.html, robots.txt, sitemap.xml, llms.txt,
-folder assets/ oraz folder umowy/ (PDF-y linkowane w sekcji "Cennik").
-README.txt jest tylko dla Ciebie – nie musi trafiać na serwer.
+źródłowe (zdjęcia i opisy od klienta) — są wyłączone w .gitignore, więc
+w ogóle nie trafiają do repozytorium ani na stronę.
+
+PLIKI KONFIGURACYJNE
+--------------------
+vercel.json    -> nagłówki HTTP: cache przeglądarki na zdjęcia (szybsze
+                  kolejne wizyty) oraz podstawowe nagłówki bezpieczeństwa.
+.vercelignore  -> pliki, które zostają w repozytorium, ale NIE trafiają na
+                  stronę — m.in. ten README (żeby nie był publicznie
+                  dostępny pod adresem kamperylublin.pl/README.txt).
 
 SEO / WIDOCZNOŚĆ W GOOGLE I W AI
 -------------------------------

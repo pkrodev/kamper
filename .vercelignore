@@ -1,0 +1,8 @@
+# Pliki, które zostają w repozytorium, ale NIE trafiają na stronę.
+# Dzięki temu README nie jest dostępny pod adresem kamperylublin.pl/README.txt
+
+README.txt
+*.docx
+*.ps1
+
+# UWAGA: folder umowy/ musi zostać wdrożony — PDF-y są linkowane w sekcji "Cennik".
